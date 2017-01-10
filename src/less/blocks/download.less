@@ -1,0 +1,116 @@
+.download{
+  background-color: @color-download;
+  padding: 9.5px 12.5px 8.5px 12.5px;
+
+  &__inner{
+    .container-large-fixed();
+    //text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__logo{
+    display: inline-block;
+    background-color: @color-logo;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: top;
+  }
+
+  &__name{
+    display: inline-block;
+    padding-right: 11px;
+  }
+
+  &__title{
+    display: block;
+    font-family: @font_TexGyreHeros;
+    font-size: 14px;
+    font-weight: 500;
+    vertical-align: top;
+    color: @color-download-name;
+  }
+
+  &__description{
+    display: block;
+    font-family: @font_TexGyreHeros;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: @color-download-name;
+  }
+
+  &__btn{
+    display: inline-block;
+    width: 90px;
+    background-color: @color-download-name;
+    color: @color-download-btn;
+    font-family: @font_TexGyreHeros;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: center;
+    padding: 7px;
+    border-radius: 3px;
+    vertical-align: top;
+  }
+
+  &__close{
+    display: inline-block;
+    margin-left: 13px;
+    vertical-align: top;
+    margin-top: 15px;
+  }
+
+  &__close1{
+    width: 14px;
+    color: @color-download-name;
+
+    border: 1px solid @color-download-name;
+    //vertical-align: middle;
+    transform: rotate3d(0, 0, 1, 45deg);
+
+  }
+
+  &__close2{
+    width: 14px;
+    color: @color-download-name;
+    border: 1px solid @color-download-name;
+    margin-top: -2px;
+    //vertical-align: middle;
+    transform: rotate3d(0, 0, 1, 135deg);
+  }
+
+  @media (min-width: @screen-sm){
+    padding: 9px 24px 8px 24px;
+    &__inner{
+      justify-content: center;
+    }
+
+    &__logo{
+      margin-right: 10px;
+    }
+
+    &__name{
+      flex-basis: 528px;
+    }
+
+    &__btn{
+      width: 110px;
+    }
+
+    &__close{
+      margin-left: 30px;
+    }
+  }
+
+  @media (min-width: @screen-lg){
+    display: none;
+  }
+
+}

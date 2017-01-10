@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
-    <title>Account Marathon</title>
+    <title>News</title>
     <link rel="stylesheet" href="css/style.css">
     <!--DEV  Вставка JS, который будет качать шрифт при первом посещении домена -->
     <script>@@include('fonts/font_loading.js')</script>
@@ -12,151 +12,177 @@
     <noscript><link rel="stylesheet" href="css/font_opensans_woff2.css"></noscript>
 </head>
 <body>
+<div class="download">
+  <div class="download__inner">
+    <div class="download__logo">
+      <picture class="download__icon">
+        <!-- <source srcset="./img/icon@3x.png" media="(min-width: 1200px)"> -->
+        <source srcset="./img/icon@2x.png" media="(min-width: 768px)">
+        <img srcset="./img/icon@2x.png" alt="Logo">
+      </picture>
+    </div>
+    <div class="download__name">
+      <div class="download__title">Centrallo</div>
+      <div class="download__description">Free on the Google Play</div>
+    </div>
+    <div class="download__btn">Download</div>
+    <div class="download__close">
+      <div class="download__close1"></div>
+      <div class="download__close2"></div>
+    </div>
+  </div>
+</div>
+<div class="avtorization">
+  <div class="avtorization__inner">
+    <div class="avtorization__logo">
+      <picture class="avtorization__icon">
+        <source srcset="./img/logo@3x.png" media="(min-width: 1200px)">
+        <source srcset="./img/logo@2x.png" media="(min-width: 768px)">
+        <img srcset="./img/logo@2x.png" alt="Logo">
+      </picture>
+    </div>
+    <div class="avtorization__sign-up">sign up <span class="avtorization__continuance">for free </span><span class="avtorization__description"> — START PUBLISHING IN MINUTES</span ></div>
+    <div class="avtorization__log-in">log in</div>
+  </div>
+</div>
   <main>
-    <div class="promo">
-        <div class="promo__inner">
-            <div class="page-header">
-              <div class="page-header__inner">
-                <div class="page-header__logo">
-                  <a href="#" class="main-logo"><img src="img/logo.png" alt="Главбух"></a>
-              </div>
-              <div class="socio">
-                <a href="" class="socio__item socio__item--ok"></a>
-                <a href="" class="socio__item socio__item--fb"></a>
-                <a href="" class="socio__item socio__item--vk"></a>
-              </div>
-              </div>
+    <section class="news">
+      <div class="news__inner">
+        <div class="news__author">
+          <div class="news__avatar">
+            <div class="news__avatar-skin">
+              <img src="img/ava@2x.png" alt="avatar" width="38" height="38" class="news__avatar-photo">
             </div>
-            <div class="promo__date">
-              21 апреля
-            </div>
-            <h1 class="promo__title">
-              Бухгалтерский марафон
-            </h1>
-            <div class="promo__description">
-              21 апреля в честь Дня Главбуха мы проводим первый в истории Бухгалтерский марафон. <br/> Ведущие эксперты по бухучету и налогам весь день будут отвечать <br/> на самые сложные рабочие вопросы.
-            </div>
-            <div class="promo__schedule">
-              <img src="img/schedule.png" alt="расписание" width="33" height="29">
-              <div class="promo__schedule-description">Расписание</div>
-            </div>
-            <div class="promo__events">
-                <div class="promo__events-inner">
-                    <div class="promo__events-item promo__events-item--active">
-                      <iframe width="257" height="145" src="https://www.youtube.com/embed/B1P9OTE_UR4" frameborder="0" allowfullscreen allowtransparency></iframe>
-                      <div class="promo__events-time">12:00</div>
-                      <div class="promo__events-title">Актуальные вопросы расчета пособий. Изменения в 2015 году</div>
-                      <div class="promo__events-reporter">Сергей Воронцов</div>
-                    </div>
-                    <div class="promo__events-item">
-                      <iframe width="257" height="145" src="https://www.youtube.com/embed/OVnkZjaI3-4" frameborder="0" allowfullscreen></iframe>
-                      <div class="promo__events-time">13:00</div>
-                      <div class="promo__events-title">НДФЛ. Неоднозначные ситуации при расчете</div>
-                      <div class="promo__events-reporter">Андрей Свиридов</div>
-                    </div>
-                    <div class="promo__events-item">
-                      <iframe width="257" height="145" src="https://www.youtube.com/embed/yt2NWJeWGX8" frameborder="0" allowfullscreen></iframe>
-                      <div class="promo__events-time">16:30</div>
-                      <div class="promo__events-title">Налог на прибыль: спорные вопросы и поправки 2015 года</div>
-                      <div class="promo__events-reporter">Федор Иванов</div>
-                    </div>
-                    <div class="promo__events-item">
-                      <iframe width="257" height="145" src="https://www.youtube.com/embed/1Pe_2P0OyDw" frameborder="0" allowfullscreen></iframe>
-                      <div class="promo__events-time">12:00</div>
-                      <div class="promo__events-title">Актуальные вопросы расчета пособий. Изменения в 2015 году</div>
-                      <div class="promo__events-reporter">Сергей Воронцов</div>
-                    </div>
-                    <div class="promo__events-item">
-                      <iframe width="257" height="145" src="https://www.youtube.com/embed/Vi9eC-ADmiY" frameborder="0" allowfullscreen></iframe>
-                      <div class="promo__events-time">13:00</div>
-                      <div class="promo__events-title">НДФЛ. Неоднозначные ситуации при расчете</div>
-                      <div class="promo__events-reporter">Андрей Свиридов</div>
-                    </div>
-                    <div class="promo__events-item">
-                      <iframe width="257" height="145" src="https://www.youtube.com/embed/A9bAV1TO8-4" frameborder="0" allowfullscreen></iframe>
-                      <div class="promo__events-time">16:30</div>
-                      <div class="promo__events-title">Налог на прибыль: спорные вопросы и поправки 2015 года</div>
-                      <div class="promo__events-reporter">Федор Иванов</div>
-                    </div>
-                </div>
-            </div>
-            <div class="promo__btn btn">Зарегистрироваться</div>
-            <a href="#prize__title" class="promo__prize-link">
+          </div>
+          <div class="news__author-name">Konstantin Vladimirskiy</div>
+          <div class="socio">
+            <a href="" class="socio__item socio__item--fb"></a>
+            <a href="" class="socio__item socio__item--tw"></a>
+            <a href="" class="socio__item socio__item--vk"></a>
+            <a href="" class="socio__item socio__item--in"></a>
+            <a href=""class="socio__item socio__item--link">http://cll.io/a6lnu</a>
+          </div>
+        </div>
+        <div class="news__btn">
 
-              <div class="promo__prize-title">Розыгрыш призов и подарков</div>
-              <img src="img/arrow.png" alt="подарки">
+          <div class="news__add-btn">Add to my Centrallo</div>
+          <div class="news__share-btn">Share</div>
+          <div class="news__name">Post-release checklist 2015.02.26</div>
+        </div>
+        <div class="news__item">
+          <div class="news__item-inner">
+            <ul>
+              <li class="news__item-line">Referral Accepted and Invited invitations not sorted by A-Z</li>
+              <li class="news__item-line">Inbox shows me 242 items - that includes Done items; Only show me active</li>
+              <li class="news__item-line">Inbox defaults to show done items - it should not</li>
+              <li class="news__item-line">Lists default to Show Done - they should not</li>
+              <li class="news__item-line">Recent view should sort by Created and show no Done items</li>
+            </ul>
+            <div class="news__time-ago">2h ago</div>
+            <div class="news__share-icon"></div>
+            <div class="news__icon"></div>
+          </div>
+        </div>
+
+      <div class="news__item">
+        <div class="news__item-inner">
+          <ul class="news__item-title news__item-title1">
+            <li class="">Children</li>
+            <div class="news__time-ago">7h ago</div>
+            <div class="news__number-line">12 items</div>
+          </ul>
+
+          <ul class="news__item-title news__item-title2">
+            <li class="">The longest title in the world</li>
+            <div class="news__date">Mar 13</div>
+            <div class="news__number-line">3 items</div>
+          </ul>
+
+          <div class="news__time-ago">2h ago</div>
+          <div class="news__share-icon"></div>
+          <div class="news__icon"></div>
+        </div>
+      </div>
+      <div class="news__item">
+        <div class="news__item-inner">
+          <div class="news__item-video news__item-video1">
+            <iframe src="https://www.youtube.com/embed/ncQl7EzKf08" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="news__item-video news__item-video2">
+            <img src="img/photo-1@3x.png" alt="">
+          </div>
+          <div class="news__item-video news__item-video3">
+            <img src="img/photo-2@3x.png" alt="">
+          </div>
+          <div class="news__item-separator"></div>
+          <div class="news__date">
+            Due on Feb 13, 12:42 PM
+          </div>
+          <div class="news__date">Mar 13</div>
+          <div class="news__icon"></div>
+        </div>
+      </div>
+      <div class="news__item">
+        <div class="news__item-inner">
+          <div class="news__item-text">
+            The Dark Knight Rises is a 2012 British-American superhero film directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan Nolan, and the story with David S. Goyer. Featuring the DC Comics character Batman, the film is the final installment in Nolan's Batman film trilogy, and the sequel to Batman Begins (2005) and The Dark Knight (2008). Christian Bale reprises the lead role of Bruce Wayne/Batman, with a returning cast of allies: Michael Caine as Alfred Pennyworth, Gary Oldman as James Gordon, and Morgan Freeman as Lucius Fox. The film introduces Selina Kyle (Anne Hathaway), a sly, morally ambiguous cat burglar, and Bane (Tom Hardy), a revolutionary bent on destroying Gotham City who forces an older Bruce Wayne to come out of retirement and become Batman again.
+          </div>
+          <div class="news__item-video news__item-video4">
+            <img src="img/photo-3@2x.png" alt="">
+          </div>
+          <div class="news__item-video news__item-video5">
+            <img src="img/photo-4@2x.png" alt="">
+          </div>
+
+          <div class="news__item-video news__item-video6">
+            <img src="img/photo-5@2x.png" alt="">
+          </div>
+          <div class="news__item-video news__item-video7">
+            <img src="img/photo-6@2x.png" alt="">
+          </div>
+          <div class="news__item-separator"></div>
+          <div class="news__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.5800379827347!2d-0.15917968459342965!3d51.52092027963742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ace9a2e67d7%3A0xd458de8d0fdc498e!2zQmFrZXIgU3QsIE1hcnlsZWJvbmUsIExvbmRvbiwg0JLQtdC70LjQutC-0LHRgNC40YLQsNC90LjRjw!5e0!3m2!1sru!2sru!4v1484053005653" width="264" height="176" frameborder="0" style="border:0" scroll="false" allowfullscreen></iframe>
+            <div class="news__map-description">
+              <div class="news__map-name">Merry Bergtraum High School for Business Cariers</div>
+              <div class="news__map-address">411 Pearl St, NY 10038<br/>
+              United States of America</div>
+              <div class="news__map-link">Watch location on Google Maps</div>
+            </div>
+            <div class="news__item-separator"></div>
+          </div>
+          <div class="news__files">
+            <a class="news__files-link" href="#">
+              <img src="img/db@2x.png" alt="logo">
+              <span class="news__files-name">logo_final.eps</span>
             </a>
-
+            <a class="news__files-link" href="#">
+              <img src="img/skydrive@2x.png" alt="photos">
+              <span class="news__files-name">photos_summer.zip</span>
+            </a>
+            <a class="news__files-link" href="#">
+              <img src="img/attach-doc@2x.png" alt="work">
+              <span class="news__files-name">work_…hard.doc</span>
+            </a>
+          </div>
+          <div class="news__date">Jan 12</div>
+          <div class="news__icon"></div>
         </div>
-    </div>
-    <div class="prize">
-        <div class="prize__inner">
-
-            <div class="prize__list">
-              <div id="prize__title" class="prize__title">
-                Конкурсы и призы
-              </div>
-              <div class="prize__list-item">
-                <div class="prize__list-title">
-                  <div class="prize__list-date">10:15</div>
-                  <div class="prize__list-description">Творческий конкурс</div>
-                </div>
-                <div class="prize__list-prize">Приз: мультиварка.</div>
-                <div class="prize__list-winner">3 Победителя</div>
-              </div>
-              <div class="prize__list-item">
-                <div class="prize__list-title">
-                  <div class="prize__list-date">11:20</div>
-                  <div class="prize__list-description">Задача на расчет</div>
-                </div>
-
-                <div class="prize__list-prize">Приз: браслет Pandora с шармом</div>
-                <div class="prize__list-winner">1 Победитель</div>
-              </div>
-              <div class="prize__list-item">
-                <div class="prize__list-title">
-                  <div class="prize__list-date">12:15</div>
-                  <div class="prize__list-description">Теоретический вопрос</div>
-                </div>
-                <div class="prize__list-prize">Приз: цифровая фоторамка.</div>
-                <div class="prize__list-winner">2 Победителя</div>
-              </div>
-              <div class="prize__list-item prize__list-item_turn prize__list-item--close">
-                <div class="prize__list-title">
-                  <div class="prize__list-date">10:15</div>
-                  <div class="prize__list-description">Творческий конкурс</div>
-                </div>
-                <div class="prize__list-prize">Приз: мультиварка.</div>
-                <div class="prize__list-winner">3 Победителя</div>
-              </div>
-              <div class="prize__list-item prize__list-item_turn prize__list-item--close">
-                <div class="prize__list-title">
-                  <div class="prize__list-date">11:20</div>
-                  <div class="prize__list-description">Задача на расчет</div>
-                </div>
-
-                <div class="prize__list-prize">Приз: браслет Pandora с шармом</div>
-                <div class="prize__list-winner">1 Победитель</div>
-              </div>
-              <div id="prize__list-more" class="prize__list-more">
-                <div class="prize__list-more-title">Загрузить больше</div>
-                <img src="img/arrow.png" alt="Больше">
-
-              </div>
-              <div id="prize__list-turn" class="prize__list-turn prize__list-turn--close">
-                <div class="prize__list-turn-title">Свернуть</div>
-                <img src="img/arrow_up.png" alt="Свернуть">
-
-              </div>
-            </div>
-
-            <div id="prize" class="prize__slider owl-carousel">
-                <div class="prize__slider-item"><img src="img/prize__slider1.jpg" width="498" height="283"  alt="галерея"></div>
-                <div class="prize__slider-item"><img src="img/prize__slider2.jpg" width="498" height="283" alt="галерея"></div>
-                <div class="prize__slider-item"><img src="img/prize__slider3.jpg" width="498" height="283" alt="галерея"></div>
-            </div>
+      </div>
+      <div class="news__item news__item--protected">
+        <div class="news__item-inner">
+          <div class="news__date">Nov 21</div>
+          <div class="news__protected">Protected</div>
         </div>
-    </div>
+      </div>
+      <div class="news__item news__item--archived">
+        <div class="news__item-inner">
+          <div class="news__date">Nov 21</div>
+          <div class="news__archived">Archived</div>
+        </div>
+      </div>
+      </div>
+    </section>
 
   </main>
   <div class="footer">

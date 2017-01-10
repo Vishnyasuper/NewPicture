@@ -1,0 +1,79 @@
+.avtorization{
+  background-color: @color-avtorization;
+  &__inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 7px 12px 12px 12px;
+  }
+
+  &__logo{
+    padding-right: 63px;
+  }
+
+  &__sign-up{
+    font-family: @font_TexGyreHeros;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.3px;
+    text-align: right;
+    color: @color-download;
+    text-transform: uppercase;
+    padding: 4px 24px 4px 0;
+  }
+
+  &__log-in{
+    font-family: @font_TexGyreHeros;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.3px;
+    text-align: right;
+    color: @color-download-name;
+    text-transform: uppercase;
+    padding: 0 0 5px 0;
+  }
+
+  &__continuance{
+    display: none;
+  }
+
+  &__description{
+    display: none;
+  }
+
+  @media (min-width: @screen-sm){
+    &__inner{
+      padding: 7px 24px 12px 24px;
+      justify-content: space-between;
+    }
+
+    &__sign-up{
+        text-decoration: underline;
+    }
+
+    &__continuance{
+      display: inline-block;
+      text-decoration: underline;
+    }
+
+    &__description{
+      display: inline-block;
+      color: @color-span;
+
+    }
+
+
+
+  }
+
+  @media (min-width: @screen-lg){
+    &__inner{
+      .container-desctop-fixed();
+      padding: 7px 0 12px 0;
+    }
+  }
+}

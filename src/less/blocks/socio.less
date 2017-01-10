@@ -1,44 +1,121 @@
 .socio{
-  display: inline-block;
-  &__item{
+  display: none;
 
-  }
-
-  a{
+  @media (min-width: @screen-sm){
     display: inline-block;
-    cursor: pointer;
+    &__item{
+      position: relative;
+    }
+
+    a{
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    &__item--fb{
+      position: absolute;
+      background-image: url("../img/soc-fb@2x.png");
+      background-repeat: no-repeat;
+      width: 8px;
+      height: 16px;
+      right: 271px;
+      top: 143px;
+    }
+
+
+    &__item--tw{
+      position: absolute;
+      background-image: url("../img/soc-tw@2x.png");
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 13px;
+      right: 233px;
+      top: 147px;
+    }
+
+    &__item--vk{
+      position: absolute;
+      background-image: url("../img/soc-vk@2x.png");
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 11px;
+      right: 200px;
+      top: 147px;
+    }
+
+    &__item--in{
+      position: absolute;
+      background-image: url("../img/soc-in@2x.png");
+      background-repeat: no-repeat;
+      width: 15px;
+      height: 15px;
+      right: 170px;
+      top: 143px;
+    }
+
+    &__item--link{
+      position: absolute;
+      width: 112px;
+      height: 24px;
+      right: 24px;
+      top: 140px;
+      border-radius: 4px;
+      background-color: @color-link;
+      color: @color-download-name;
+      font-family: @font_TexGyreHeros;
+      font-size: 13px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 24px;
+    }
+
+    &__item--link:hover{
+      text-decoration: none;
+      color: @color-download-name;
+    }
+
+    &__item--link:active{
+      text-decoration: none;
+      color: @color-download-name;
+    }
+
+    &__item--link:visited{
+      text-decoration: none;
+      color: @color-download-name;
+    }
+
   }
 
-  &__item--ok{
-    position: absolute;
-    background-image: url("../img/ok.png");
-    background-repeat: no-repeat;
-    width: 32px;
-    height: 31px;
-    right: 125px;
-    top: 33px;
+  @media (min-width: @screen-lg){
+    &__item--fb{
+      right: 367px;
+      top: 104px;
+    }
+
+    &__item--tw{
+      right: 331px;
+      top: 106px;
+    }
+
+    &__item--vk{
+      right: 297px;
+      top: 109px;
+    }
+
+    &__item--in{
+      right: 266px;
+      top: 104px;
+    }
+
+    &__item--link{
+      right: 124px;
+      top: 104px;
+    }
   }
 
-
-  &__item--fb{
-    position: absolute;
-    background-image: url("../img/fb.png");
-    background-repeat: no-repeat;
-    width: 32px;
-    height: 31px;
-    right: 82px;
-    top: 33px;
-  }
-
-  &__item--vk{
-    position: absolute;
-    background-image: url("../img/vk.png");
-    background-repeat: no-repeat;
-    width: 32px;
-    height: 31px;
-    right: 40px;
-    top: 33px;
-  }
 
 
 }
