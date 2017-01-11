@@ -1932,9 +1932,6 @@ body {
   box-shadow: 0px 0px 10px #000;
   z-index: 5;
 }
-.news__popup-content {
-  border-radius: 3px;
-}
 .news__popup-title {
   position: relative;
   padding: 13px;
@@ -1947,9 +1944,9 @@ body {
   color: #404143;
   background-color: #ffffff;
 }
-.news__socio {
+.news__popup-socio {
   border-radius: 3px;
-  background-color: #f0f5fa;
+  background-color: #c5c5c5;
   text-align: center;
 }
 .news__popup-link {
@@ -2407,7 +2404,6 @@ body {
   width: 10px;
   height: 20px;
 }
-/*@import "blocks/owl.carousel.less";*/
 .page-footer {
   background-color: #3c434a;
 }
@@ -2744,6 +2740,9 @@ body {
     padding-right: 212px;
   }
   .news__share-btn {
+    display: none;
+  }
+  .news__popup {
     display: none;
   }
   .news__btn {
