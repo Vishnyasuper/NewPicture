@@ -1,15 +1,51 @@
 .socio{
   display: none;
 
+  &--footer{
+    display: inline-block;
+    position: relative;
+  }
+
+  &__item-footer--tw{
+      position: absolute;
+      background-image: url("../img/twi-foot@2x.png");
+      width: 20px;
+      height: 16px;
+      bottom: -4px;
+
+    }
+
+    &__item-footer--fb{
+      background-image: url("../img/fb-foot@2x.png");
+      position: absolute;
+      bottom: -4px;
+      left: 36px;
+      width: 10px;
+      height: 20px;
+    }
+
   @media (min-width: @screen-sm){
     display: inline-block;
+    position: relative;
+
+
+
     &__item{
-      position: relative;
+      //position: relative;
     }
 
     a{
       display: inline-block;
       cursor: pointer;
+      text-decoration: none;
+    }
+
+    a:hover{
+      text-decoration: none;
+    }
+
+    a:visited{
+      text-decoration: none;
     }
 
     &__item--fb{
@@ -18,8 +54,8 @@
       background-repeat: no-repeat;
       width: 8px;
       height: 16px;
-      right: 271px;
-      top: 143px;
+      //right: 271px;
+      bottom: 8px;
     }
 
 
@@ -29,8 +65,8 @@
       background-repeat: no-repeat;
       width: 16px;
       height: 13px;
-      right: 233px;
-      top: 147px;
+      left: 28px;
+      bottom: 8px;
     }
 
     &__item--vk{
@@ -39,8 +75,8 @@
       background-repeat: no-repeat;
       width: 20px;
       height: 11px;
-      right: 200px;
-      top: 147px;
+      left: 62px;
+      bottom: 8px;
     }
 
     &__item--in{
@@ -49,16 +85,16 @@
       background-repeat: no-repeat;
       width: 15px;
       height: 15px;
-      right: 170px;
-      top: 143px;
+      left: 95px;
+      bottom: 8px;
     }
 
     &__item--link{
       position: absolute;
       width: 112px;
       height: 24px;
-      right: 24px;
-      top: 140px;
+      left: 165px;
+      bottom: 3px;
       border-radius: 4px;
       background-color: @color-link;
       color: @color-download-name;
@@ -91,28 +127,27 @@
 
   @media (min-width: @screen-lg){
     &__item--fb{
-      right: 367px;
-      top: 104px;
+      //right: 367px;
+      //top: 104px;
     }
 
     &__item--tw{
-      right: 331px;
-      top: 106px;
+      //right: 331px;
+      //top: 106px;
     }
 
     &__item--vk{
-      right: 297px;
-      top: 109px;
+      //right: 297px;
+      //top: 109px;
     }
 
     &__item--in{
-      right: 266px;
-      top: 104px;
+      //right: 266px;
+      //top: 104px;
     }
 
     &__item--link{
-      right: 124px;
-      top: 104px;
+      left: 141px;
     }
   }
 

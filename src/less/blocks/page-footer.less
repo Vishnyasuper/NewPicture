@@ -1,70 +1,35 @@
 .page-footer{
+  background-color: @color-avtorization;
   &__inner{
     padding: 24px;
-    background-color: @color-footer;
+
   }
 
-  &__link-list{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  &__link-journal{
-    color: @color-text-footer;
-    font-family: @font_PT_SerifRegular;
-    font-size: 14px;
-    line-height: 31px;
-    font-weight: 500;
-    padding-right: 16px;
-    text-decoration: none;
-
-    span{
-      color: @color-schedule;
+  &__nav{
+    display: inline-block;
+    padding-right: 50px;
+    li{
+      display: inline-block;
+      list-style: none;
+      padding-right: 10px;
     }
 
-  }
-
-  &__link-journal:focus{
-    color: @color-text-footer;
-  }
-
-  &__link-journal:hover{
-    color: @color-text-footer;
-  }
-
-  &__link-journal:active{
-    color: @color-text-footer;
-  }
-
-  &__feedback{
-    font-family: @font_PT_SerifRegular;
-    line-height: 31px;
-    color: @color-schedule;
-    padding-right: 55px;
-    text-decoration: none;
-    span{
-        font-size: 16px;
-      border-left: 1px solid @color-footer-span;
-
-      padding-right: 6px;
+    a{
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: 0.4px;
+      text-align: left;
+      color: @color-footer;
     }
-  }
 
-  &__feedback:hover{
-    text-decoration: none;
-    color: @color-schedule;
-  }
-
-
-  &__feedback:active{
-    text-decoration: none;
-    color: @color-schedule;
-  }
-
-  &__feedback:visited{
-    text-decoration: none;
-    color: @color-schedule;
+    ul{
+      padding: 0;
+      margin: 0;
+    }
   }
 
   a:hover{
@@ -83,5 +48,50 @@
 
   }
 
+  &__logo{
+    display: none;
+  }
 
+
+  @media (min-width: @screen-sm){
+    &__logo{
+      display: inline-block;
+      padding-right: 160px;
+   }
+
+   &__nav{
+     padding-right: 213px;
+   }
+  }
+
+  @media (min-width: @screen-lg){
+    &__inner{
+      .container-desctop-fixed();
+      padding: 24px 0;
+    }
+
+    &__logo{
+
+      padding-right: 261px;
+   }
+
+   &__nav{
+     padding-right: 348px;
+   }
+  }
+
+}
+
+.main-logo{
+  display: inline-block;
+  font-family: @font_TexGyreHeros;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: @color-footer;
 }

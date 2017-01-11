@@ -56,31 +56,71 @@
           </div>
           <div class="news__author-name">Konstantin Vladimirskiy</div>
           <div class="socio">
-            <a href="" class="socio__item socio__item--fb"></a>
-            <a href="" class="socio__item socio__item--tw"></a>
-            <a href="" class="socio__item socio__item--vk"></a>
-            <a href="" class="socio__item socio__item--in"></a>
-            <a href=""class="socio__item socio__item--link">http://cll.io/a6lnu</a>
+            <a href="#" class="socio__item socio__item--fb"></a>
+            <a href="#" class="socio__item socio__item--tw"></a>
+            <a href="#" class="socio__item socio__item--vk"></a>
+            <a href="#" class="socio__item socio__item--in"></a>
+            <a href="http://cll.io/a6lnu"class="socio__item socio__item--link">http://cll.io/a6lnu</a>
           </div>
         </div>
         <div class="news__btn">
 
           <div class="news__add-btn">Add to my Centrallo</div>
-          <div class="news__share-btn">Share</div>
+
+            <div class="news__share-btn b-container">
+              <a href="javascript:PopUpShow()">Share</a>
+
+            </div>
+
+
+          <div class="news__popup" id="popup1">
+            <div class="news__popup-content">
+              <div class="news__popup-title">
+                Share
+                <a href="javascript:PopUpHide()">
+                  <div class="news__popup-close">
+                    <div class="news__popup-close1"></div>
+                    <div class="news__popup-close2"></div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="news__popup-socio">
+                <a href="http://cll.io/a6lnu" class="news__popup-link">
+                http://cll.io/a6lnu
+                </a>
+                <div class="news__popup-soc">
+                  <a href="#" class="news__popup-item news__popup-item--fb"></a>
+                  <a href="#" class="news__popup-item news__popup-item--tw"></a>
+                  <a href="#" class="news__popup-item news__popup-item--vk"></a>
+                  <a href="#" class="news__popup-item news__popup-item--in"></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
           <div class="news__name">Post-release checklist 2015.02.26</div>
         </div>
         <div class="news__item">
-          <div class="news__item-inner">
+          <div class="news__item-inner news__item-inner--liked">
+          <span class="news__item-corner"></span>
+          <span class="news__item-star"></span>
             <ul>
               <li class="news__item-line">Referral Accepted and Invited invitations not sorted by A-Z</li>
-              <li class="news__item-line">Inbox shows me 242 items - that includes Done items; Only show me active</li>
-              <li class="news__item-line">Inbox defaults to show done items - it should not</li>
+              <li class="news__item-line news__item-line--check">Inbox shows me 242 items - that includes Done items; Only show me active</li>
+              <li class="news__item-line news__item-line--check">Inbox defaults to show done items - it should not</li>
               <li class="news__item-line">Lists default to Show Done - they should not</li>
               <li class="news__item-line">Recent view should sort by Created and show no Done items</li>
             </ul>
-            <div class="news__time-ago">2h ago</div>
-            <div class="news__share-icon"></div>
-            <div class="news__icon"></div>
+            <div class="news__time-information">
+              <div class="news__time-ago">2h ago</div>
+              <div class="news__icon">
+                <a href="#" class="news__share-icon"></a>
+                <a href="http://cll.io/a6lnu" title="http://cll.io/a6lnu" class="news__url-icon"></a>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -88,19 +128,26 @@
         <div class="news__item-inner">
           <ul class="news__item-title news__item-title1">
             <li class="">Children</li>
-            <div class="news__time-ago">7h ago</div>
-            <div class="news__number-line">12 items</div>
+            <div class="news__information">
+              <div class="news__date">7h ago</div>
+              <div class="news__number-line">12 items</div>
+            </div>
           </ul>
 
           <ul class="news__item-title news__item-title2">
             <li class="">The longest title in the world</li>
-            <div class="news__date">Mar 13</div>
-            <div class="news__number-line">3 items</div>
+            <div class="news__information">
+              <div class="news__date">Mar 13</div>
+              <div class="news__number-line">3 items</div>
+            </div>
           </ul>
-
-          <div class="news__time-ago">2h ago</div>
-          <div class="news__share-icon"></div>
-          <div class="news__icon"></div>
+          <div class="news__time-information">
+            <div class="news__time-ago">2h ago</div>
+            <div class="news__icon">
+              <a href="#" class="news__share-icon"></a>
+              <a href="http://cll.io/a6lnu" title="http://cll.io/a6lnu" class="news__url-icon"></a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="news__item">
@@ -115,11 +162,16 @@
             <img src="img/photo-2@3x.png" alt="">
           </div>
           <div class="news__item-separator"></div>
-          <div class="news__date">
+          <div class="news__month">
             Due on Feb 13, 12:42 PM
           </div>
-          <div class="news__date">Mar 13</div>
-          <div class="news__icon"></div>
+          <div class="news__time-information">
+            <div class="news__date">Mar 13</div>
+            <div class="news__icon">
+              <a href="#" class="news__share-icon"></a>
+              <a href="http://cll.io/a6lnu" title="http://cll.io/a6lnu" class="news__url-icon"></a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="news__item">
@@ -165,20 +217,33 @@
               <span class="news__files-name">work_…hard.doc</span>
             </a>
           </div>
-          <div class="news__date">Jan 12</div>
-          <div class="news__icon"></div>
+          <div class="news__time-information">
+            <div class="news__date">Jan 12</div>
+            <div class="news__icon">
+              <a href="#" class="news__share-icon"></a>
+              <a href="http://cll.io/a6lnu" title="http://cll.io/a6lnu" class="news__url-icon"></a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="news__item news__item--protected">
-        <div class="news__item-inner">
-          <div class="news__date">Nov 21</div>
-          <div class="news__protected">Protected</div>
+        <div class="news__item-inner news__item-inner--protected">
+          <span class="news__item-corner"></span>
+          <span class="news__item-lock"></span>
+          <div class="news__description">
+            <div class="news__date">Nov 21</div>
+            <div class="news__protected">Protected</div>
+          </div>
         </div>
       </div>
       <div class="news__item news__item--archived">
-        <div class="news__item-inner">
-          <div class="news__date">Nov 21</div>
-          <div class="news__archived">Archived</div>
+        <div class="news__item-inner news__item-inner--archived">
+          <span class="news__item-corner"></span>
+          <span class="news__item-box"></span>
+          <div class="news__description">
+            <div class="news__date">Nov 21</div>
+            <div class="news__archived">Archived</div>
+          </div>
         </div>
       </div>
       </div>
@@ -188,10 +253,19 @@
   <div class="footer">
       <div class="page-footer">
         <div class="page-footer__inner">
-          <div class="page-footer__link-list">
-            <a href="#" class="page-footer__link-journal">© Организатор — <span> журнал «Главбух»</span></a>
-            <a href="#" class="page-footer__feedback"><span></span>Обратная связь</a>
-            <div class="page-footer__btn"><img src="img/page-footer__btn.png" width="31" height="31" alt=""></div>
+          <div class="page-footer__logo">
+            <a href="#" class="main-logo">© Centrallo 2015</a>
+          </div>
+          <nav class="page-footer__nav">
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="socio--footer">
+            <a href="" class="socio__item-footer socio__item-footer--tw"></a>
+            <a href="" class="socio__item-footer socio__item-footer--fb"></a>
           </div>
         </div>
       </div>
