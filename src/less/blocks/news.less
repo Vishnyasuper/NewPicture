@@ -140,10 +140,6 @@
       z-index: 5;
   }
 
-  &__popup-content{
-    border-radius: 3px;
-
-  }
 
   &__popup-title{
     position: relative;
@@ -158,18 +154,17 @@
     background-color: @color-download-name;
   }
 
-  &__socio{
+  &__popup-socio{
     border-radius: 3px;
     background-color: @color-popup-socio;
     text-align: center;
-    //opacity: 0.7;
+
   }
 
   &__popup-link{
     display: block;
     width: 151px;
     margin: 0 auto;
-    //text-align: center;
     background-color: @color-download;
     margin-top: 21px;
     margin-bottom: 30px;
@@ -261,7 +256,6 @@
   &__item-inner{
     margin: 0 auto;
     width: 100%;
-    //width: 296px;
     border-radius: 5px;
     background-color: @color-bg-news;
     padding: 18px 18px 28px 16px;
@@ -391,10 +385,6 @@
     border: none;
     vertical-align: top;
     margin-right: 10px;
-  //   width: 8.6px;
-  //   height: 5.9px;
-  //   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.12);
-  //   border: solid 1.5px #ffffff;
    }
 
   &__time-ago{
@@ -451,7 +441,6 @@
     background-image: url("../img/calendar@2x.png");
     width: 18px;
     height: 20px;
-    //margin-right: 25px;
     left: -25px;
   }
 
@@ -465,9 +454,6 @@
     img{
       vertical-align: baseline;
     }
-    //width: 264px;
-    //height: 120px;
-    //overflow: hidden;
   }
 
   &__item-video1{
@@ -489,11 +475,6 @@
     }
   }
 
-  // &__item-video{
-  //   img{
-  //     width: 264px;
-  //   }
-  // }
 
   &__item-video4{
     display: inline-block;
@@ -642,7 +623,6 @@
 
   &__share-icon{
     position: absolute;
-    //display: inline-block;
   }
 
   &__share-icon:before{
@@ -659,7 +639,6 @@
 
   &__url-icon{
     position: absolute;
-    //display: inline-block;
   }
 
   &__url-icon:before{
@@ -687,6 +666,10 @@
     }
 
     &__share-btn{
+      display: none;
+    }
+
+    &__popup{
       display: none;
     }
 
@@ -815,10 +798,6 @@
   @media (min-width: @screen-lg){
     &__inner{
       .container-desctop-fixed();
-    }
-
-    &__add-btn{
-      //margin-right: 0;
     }
 
     &__author-name{
